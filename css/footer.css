@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #112240;
+  border-top: 1px solid rgba(100, 255, 218, 0.1);
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #64ffda;
+}
+
+footer p {
+  margin: 0;
+}

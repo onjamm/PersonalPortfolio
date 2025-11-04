@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", Roboto, sans-serif;
+  background-color: #112240;
+  color: #cdd6f4;
+  scroll-behavior: smooth;
+  cursor: url("data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAmaNSAOz1tQAkWG4Ay95QAGp1IAAiJgUAG0hcADJxjAA5QAoAX2kcAE5XEgBCkbMAdYIhAD1FCwD/9cIAAAAAAAAAAAAAAAAAAJmZZgAAAAAAAAAAAAAAAACZmWYAAAAAAAAAAAAAAAAAmapmAAAAAAAAAAAAAAAAAJmqZgAAAAAAAJmZAAAAADOIZmYAAAAAAACZmQAAAAAziGZmAAAAAAAAmaqZmQAzzHcAAAAAAAAAAJmqmZkAM8x3AAAAAAAAAAAAmVVVmYh3AAAAAAAAAAAAAJlVVZmIdwAAAAAAAAAAAAAAZlW7ZgAAAAAAAAAAAAAAAGZVu2YAAAAAAAAAAAAAAJlEu+7uZgAAAAAAAAAAAACZRLvu7mYAAAAAAAAAAACZRN1EZu5mAAAAAAAAAAAAmUTdRGbuZgAAAAAAAAAAmUQRRGYAZu5mAAAAAAAAAJlEEURmAGbuZgAAAAAAAJkiEURmAAAAZmYAAAAAAACZIhFEZgAAAGZmAAAAAACZIhFEZgAAAAAAAAAAAAAAmSIRRGYAAAAAAAAAAAAAmf8RRGYAAAAAAAAAAAAAAJn/EURmAAAAAAAAAAAAAJkiEURmAAAAAAAAAAAAAACZIhFEZgAAAAAAAAAAAACZIhEiZgAAAAAAAAAAAAAAmSIRImYAAAAAAAAAAAAAAJkiImYAAAAAAAAAAAAAAACZIiJmAAAAAAAAAAAAAAAAmWZmAAAAAAAAAAAAAAAAAJlmZgAAAAAAAAAAAAAAAAD////A////wP///8D////A//D/AP/w/wD/8AwP//AMD//8AD///AA///8A////AP///AA///wAP//wAD//8AA//8AMD//ADA//AD8P/wA/D/wA///8AP//8AP///AD///AD///wA///wA///8AP///AP///wD///8D////A////w=="),
+    auto;
+}
+
+/* ==============
+Hero
+===============*/
+
+.hero {
+  background-color: #0a192f;
+  min-width: 300px;
+  padding: 3rem 1rem;
+  text-align: center;
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.05);*/
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.08);
+}
+
+.hero-title {
+  min-width: 300px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+  display: inline-block;
+}
+
+.hero-title:hover {
+  transform: scale(1.07);  
+}
+
+
+.hero-subtitle {
+  min-width: 300px;
+  font-size: 1.3rem;
+  color: #64ffda;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, .75));
+}
+
+.hero-desc {
+  min-width: 300px;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  color: #ccd6f6;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==============
+values-section
+===============*/
+
+.value-container {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.value-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a192f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
+  border-left: 1px solid rgba(100, 255, 218, 0.08);
+  text-align: left;
+  color: #fff;
+}
+
+.value-card:hover {
+  transform: scale(1.03);
+}
+
+.value-card h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  color: #64ffda;
+  font-family: "Roboto", sans-serif;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+}
+
+.value-card p {
+  line-height: 1.5rem;
+  color: #cdd6f4;
+}
+
+/* ==============
+Language Showcase
+===============*/
+
+.tech-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  margin-top: .2rem;
+  min-width: 275px;
+  
+}
+
+.tech-title {
+  display: inline-block;
+  /*background-color: rgba(100, 255, 218, 0.08);*/
+  padding: .5rem;
+  padding-top: .8rem;
+  border-radius: 999px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+  font-family: 'Exo 2', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.tech-title::after {
+  content: "⬇";
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  color: #64ffda;
+  transform: translateY(1px);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.tech-title:hover {
+  transform: scale(1.1);
+  
+}
+
+.tech-showcase-wrapper {
+  background-color: #0a192f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+  padding-bottom: 2.3rem;
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
+  margin-top: 1rem;
+}
+
+.tech-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch; 
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
+  border-left: 1px solid rgba(100, 255, 218, 0.08);
+  box-sizing: border-box;
+  background-color: #112240;
+  min-height: 0;
+  margin-bottom: .2rem;
+}
+
+.tech-card:hover {
+  transform: scale(1.02);
+}
+
+.tech-card h3 {
+  margin: .8rem 0 0.5rem;
+  font-size: 1.25rem;
+  color: #64ffda;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+}
+
+.tech-card p {
+  margin-bottom: 1.05rem;
+  margin-top: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #cdd6f4;
+  flex-grow: 1;
+}
+
+.tech-card a {
+  text-decoration: none;
+  color: #0077cc;
+  color: #f8f8f2;
+  font-weight: bold;
+  background-color: rgba(100, 255, 218, 0.08);
+  padding: 0.35rem 1rem 0.5rem 1.5rem;
+  border-radius: 999px;
+}
+
+.tech-card a:hover {
+  transform: scale(1.08);
+
+}
+
+/* ==============
+Language Showcase Images
+===============*/
+
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.icon img {
+  max-height: 140px;
+  max-width: 140px;
+  height: 140px;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+}
+
+#mysql {
+  transform: scale(1.9);
+}
+
+
+
+
+/* ==============
+Media Query
+===============*/
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.75rem;
+  }
+}
