@@ -25,10 +25,11 @@ header {
 }
 
 header .logo img {
-  max-height: 56px;
+  max-height: 35px;
   height: auto;
   display: block;
   filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
+  padding-left: 0.3rem;
 }
 
 header .logo img:hover {
@@ -61,7 +62,7 @@ nav a {
 }
 
 nav li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -84,7 +85,6 @@ nav li a::after {
 .nav-list a.active::after {
   width: 100%;
 }
-
 
 @media (min-width: 768px) {
   header {
