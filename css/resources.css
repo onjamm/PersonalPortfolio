@@ -17,7 +17,7 @@ Resource Cards
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   min-width: 275px;
 }
 
@@ -29,13 +29,13 @@ Resource Cards
   font-weight: 600;
   color: #ffffff;
   text-align: center;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   margin-bottom: 1.35rem;
   filter: drop-shadow(0 0 4.5px rgba(100, 255, 218, 0.9));
   min-width: 325px;
   text-transform: uppercase;
-  letter-spacing: .14rem;
-  font-family: 'Exo 2', sans-serif;
+  letter-spacing: 0.14rem;
+  font-family: "Exo 2", sans-serif;
 }
 
 .resource-title::after {
@@ -48,7 +48,6 @@ Resource Cards
   transition: transform 0.3s ease;
 }
 
-
 .resource-title:hover {
   transform: scale(1.13);
 }
@@ -56,7 +55,8 @@ Resource Cards
 .resource-showcase-wrapper {
   padding: 0.01rem 1rem 2rem;
   background-color: #0a192f;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03),
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
     inset 0 -1px 0 rgba(255, 255, 255, 0.03);
 }
 
@@ -137,19 +137,19 @@ Resource-imgs
 }
 
 .icon img {
-  max-height: 140px;
-  max-width: 140px;
-  height: 140px;
+  max-height: 150px;
+  max-width: 150px;
+  height: 150px;
   display: block;
   filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
 }
 
 #w3-logo {
-  transform: scale(1.3);
+  transform: scale(1.02);
 }
 
 #mobbin-logo {
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
 #mdn {
@@ -157,10 +157,12 @@ Resource-imgs
 }
 
 #hsl {
-  transform: scale(0.90);
+  transform: scale(0.9);
 }
 
-
+#adobe {
+  transform: scale(0.95);
+}
 
 /* ==============
 Responsive Design
@@ -174,5 +176,4 @@ Responsive Design
     margin-bottom: 6rem;
     gap: 2rem;
   }
-
 }

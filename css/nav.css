@@ -29,7 +29,7 @@ header .logo img {
   height: auto;
   display: block;
   filter: drop-shadow(0 0 4px rgba(100, 255, 218, 0.75));
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
 }
 
 header .logo img:hover {
